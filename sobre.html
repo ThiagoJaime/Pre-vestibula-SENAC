@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="shortcut icon" href="./img/foguete favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img style="width: 208px" src="./img/logoEmpresa.png" alt="Logo da empresa">
+        </a>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Página inicial</li>
+                </a>
+                <a href="cursos.html">
+                    <li>Cursos</li>
+                </a>
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+                <a class="activeLink" href="sobre.html">
+                    <li> Sobre nós</li>
+                </a>
+                <a href="equipe.html">
+                    <li> Nossa equipe</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="interface">
+        <div class="column">
+            <h1 style="text-align: center;">História do curso</h1>
+            <p class="p" style="text-align: justify;">
+                O curso preparatório Impulso foi criado pela pedagoga Kelly Siqueira e o projeto nasceu em maio de 2016 no Rio de Janeiro, no quintal da sua casa, onde ela acolhia e impulsionava jovens a alcançar seu potêncial através da educação para que tivessem êxito em sua caminhada. Hoje a Impulso, em um novo estágio, encontra-se com novos polos espalhados pelo cidade do Rio de Janeiro e expandindo cada vez mais. Já conta com mais de 800 aprovados em  universidades espalhadas por todo o Brasil e até mesmo alunos já formados em suas respectivas áreas, entre eles, profissionais que retornaram e hoje compõe a nossa equipe.
+            </p>
+        </div>
+
+        <div class="column">
+            <h1 style="text-align: center;">Nosso Objetivo</h1>
+            <p class="p" style="text-align: justify;">
+                O impulso está transformando o acesso à educação no país. O objetivo do curso é garantir sua
+                aprovação o mais rápido
+                possível, ensinando APENAS o que você precisa para ser aprovado no concurso dos seus sonhos. Os alunos
+                contam
+                com toda a experiência de professores renomados para garantir que as aulas sejam dinâmicas e sem
+                enrolação,
+                oferecendo tudo o que o aluno precisa para recuperar o tempo perdido na escola. Você vai se transformar
+                numa
+                Máquina de Papiro!
+            </p>
+            <img src="./img/trote-aprovados.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+        <img style="width: 208px; border: 2px solid white; border-radius: 50px;" src="./img/logoEmpresa.png"
+            alt="Logo da empresa">
+        <ul>
+            <li>Central de ajuda</li>
+            <li>Política de privacidade</li>
+            <li>Termos de uso</li>
+            <li>Trabalhe conosco</li>
+        </ul>
+        <div class="redes-sociais">
+            <div class="texto-redes">
+                <p>siga-nos nas redes sociais</p>
+            </div>
+            <div class="redes-icones">
+                <img src="./img/icone-facebook.svg" alt="">
+                <img src="./img/icone-instagram.svg" alt="">
+                <img src="./img/icone-twitter.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/sobre.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".column"), {
+            max: 10,
+            speed: 400,
+            scale: 0.9,
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="shortcut icon" href="./img/foguete favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cursos.css">
+</head>
+
+<body>
+    <div id="abaCarrinho">
+        <button id="btnFechar">X</button>
+        <h1>Carrinho</h1>
+        <ul id="carrinho">
+            <li class="preçoCarrinho">O seu carrinho está vazio</li>
+        </ul>
+        <button id="finalizarCompra" >Finalizar compra</button>
+        <button id="limparCarrinho"> Excluir todos os itens</button>
+    </div>
+    <header>
+        <a href="index.html">
+            <img style="width: 208px" src="./img/logoEmpresa.png" alt="Logo da empresa">
+        </a>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Página inicial</li>
+                </a>
+                <a class="activeLink" href="cursos.html">
+                    <li>Cursos</li>
+                </a>
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="sobre.html">
+                    <li> Sobre nós</li>
+                </a>
+                <a href="equipe.html">
+                    <li> Nossa equipe</li>
+                </a>
+                <img id="iconeCarrinho" src="./img/carrinho-de-compras.png" alt="">
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <h1>veja os nossos planos, escolha um e prepare-se para decolar!</h1>
+
+        <!-- O article foi feito para englobar todos os 'cards' de curso e centralizar todos juntos -->
+        <article class="planosEnem">
+
+            <!-- Section 1 feita para o primeiro curso -->
+            <section id="plano1" class="plano1">
+
+                <h2>Enem intensivo 2022</h2>
+
+                <p>Em até 12x sem juros de
+                    <br>
+                    <span class="preco">R$22,90</span>
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            <span>✔ </span>Aulas ao vivo
+                        </li>
+                        <li>
+                            <span>✔ </span>4 Simulados
+                        </li>
+                        <li>
+                            <span>✔ </span>Banco de questões
+                        </li>
+                        <li>
+                            <span>✔ </span>Cronograma de estudos
+                        </li>
+                    </ul>
+                </div>
+                <button id="btn1">Escolher esse plano!🚀</button>
+            </section>
+
+            <!-- Section 2 feita para o segundo curso -->
+            <section id="plano2" class="plano2">
+                <h2>Enem intensivo plus 2022 🔥</h2>
+                <p>Em até 12x sem juros de
+                    <br>
+                    <span class="preco">R$24,90</span>
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            <span>✔ </span>Aulas ao vivo
+                        </li>
+                        <li>
+                            <span>✔ </span>6 Simulados
+                        </li>
+                        <li>
+                            <span>✔ </span>Banco de questões
+                        </li>
+                        <li>
+                            <span>✔ </span>Cronograma de estudos
+                        </li>
+                        <li>
+                            <span>✔ </span>Intensivo de redação
+                        </li>
+                    </ul>
+                </div>
+                <button id="btn2">Escolher esse plano! 🚀</button>
+            </section>
+
+            <!-- Section 3 feita para o terceiro curso -->
+            <section id="plano3" class="plano3">
+                <h2>Enem medicina 2022🥼</h2>
+                <p>Em até 12x sem juros de
+                    <br>
+                    <span class="preco">R$29,90</span>
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            <span>✔ </span>Aulas ao vivo
+                        </li>
+                        <li>
+                            <span>✔ </span>Aulas exclusivas
+                        </li>
+                        <li>
+                            <span>✔ </span>Simulados semanais
+                        </li>
+                        <li>
+                            <span>✔ </span>Banco de questões
+                        </li>
+                        <li>
+                            <span>✔ </span>Cronograma de estudos
+                        </li>
+                        <li>
+                            <span>✔ </span>Intensivo de redação
+                        </li>
+                    </ul>
+                </div>
+                <button id="btn3">Escolher esse plano! 🚀</button>
+            </section>
+        </article>
+
+        <!-- Criei outro article para ele ocupar a linha inteira e ficar abaixo -->
+        <article id="planoRedacao" class="planoRedacao">
+            <section>
+                <h2>curso intensivo de redação 📑</h2>
+                <p>Curso exclusivo para quem quer dar um foco especial em redação!</p>
+                <p>Em até 12x sem juros de
+                    <br>
+                    <span class="preco">R$19,90</span>
+                </p>
+                <button id="btn4">Escolher esse plano! 🚀</button>
+            </section>
+        </article>
+
+    </main>
+    
+    <footer>
+        <img style="width: 208px; border: 2px solid white; border-radius: 50px;" src="./img/logoEmpresa.png"
+            alt="Logo da empresa">
+        <ul>
+            <li>Central de ajuda</li>
+            <li>Política de privacidade</li>
+            <li>Termos de uso</li>
+            <li>Trabalhe conosco</li>
+        </ul>
+        <div class="redes-sociais">
+            <div class="texto-redes">
+                <p>siga-nos nas redes sociais</p>
+            </div>
+            <div class="redes-icones">
+                <img src="./img/icone-facebook.svg" alt="">
+                <img src="./img/icone-instagram.svg" alt="">
+                <img src="./img/icone-twitter.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/cursos.js"></script>
+</body>
+
+</html>

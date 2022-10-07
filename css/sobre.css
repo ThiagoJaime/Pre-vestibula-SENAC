@@ -1,0 +1,98 @@
+/*---------------------------------------*/
+/*------------   INTERFACE   ------------*/
+.interface {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.interface div {
+    background: #0077ff;
+    margin: 15px auto;
+    width: 65%;
+    padding: 20px;
+    border: 3px solid rgb(0, 255, 0);
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: -5px -6px 15px rgba(0, 255, 0, 0.205);
+    position: relative;
+}
+
+.p {
+    color: rgba(240, 248, 255, 0.952);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.700);
+    font-size: 1.35em;
+}
+
+div > h1 {
+    margin-bottom: 0.7em;
+    text-decoration: underline;
+    color: rgb(240, 238, 238)
+}
+.column img{
+    display: none;
+}
+main {
+    height: auto;    
+}
+
+/*------------   INTERFACE   ------------*/
+/*---------------------------------------*/
+
+@media (max-width: 450px) {
+    .interface div {
+        height: 30%;
+        width: 75%;
+    }
+    .p {
+        height: auto;
+    }
+
+}
+
+@media (min-width: 852px){
+    .interface {
+        justify-content: space-around;
+        align-items: center;
+        text-align: justify;
+        height: auto;
+    }
+
+    .interface div {
+        width: 40%;
+        padding: 20px;
+        border: 3px solid rgb(0, 255, 0);
+    }
+    
+    main {
+        height: 90vh;
+    }
+
+}
+@media (min-width: 1000px){
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .column img{
+        display: block;
+        align-self: center;
+        margin-top: 20px;
+        border: 2px solid rgb(0, 255, 0);
+        border-radius: 24px;
+        width: 63%; 
+        height: 300px;
+        box-shadow: 1px 1px 20px black;
+    }
+}
+
+@media (min-height: 1100px) {
+    .interface {
+        height: 90vh;
+    }
+    
+    .interface div {
+        height: 75%;
+    }
+    
+}

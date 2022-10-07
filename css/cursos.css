@@ -1,0 +1,206 @@
+
+main{
+    height: max-content;
+}
+/* INICIO JAVASCRIPT */
+
+#iconeCarrinho{
+    width: 40px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    left: 90%;
+    top: 50%;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 50%;
+}
+#abaCarrinho{
+    height: 500px;
+    width: 300px; 
+    margin-top: 117px;
+    background-color:#0077ff;
+    position:fixed;
+    left: 100%;
+    border-left: 2px solid rgb(0, 255, 0);
+    border-bottom: 2px solid rgb(0, 255, 0);
+    border-top: 2px solid rgb(0, 255, 0);
+    border-radius: 5px; 
+    transition: 1s;
+    color: white;
+    z-index: 1;
+}
+
+#btnFechar{
+    margin: 20px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border: 2px solid white;
+    color: white;
+    border-radius: 100%;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s
+}
+#btnFechar:hover{
+    border: 2px solid rgb(255, 0, 0);
+    color: red;
+}
+.preçoCarrinho{
+    list-style: none;
+    font-size: 1.5rem;
+    padding-inline-start: 20px;
+}
+#carrinho{
+    margin-bottom: 160px;
+}
+#limparCarrinho, #finalizarCompra{
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    cursor: pointer;
+    margin-top: 6px;
+    background-color: #0029589e;
+    color: white;
+    transition: .3s;
+}
+#limparCarrinho:hover{
+    color: red;
+}
+#finalizarCompra:hover{
+    color: rgb(0, 255, 0);
+}
+
+
+
+/* FIM JAVASCRIPT */
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 40px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.planosEnem, .planoRedacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.plano1, .plano2, .plano3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0077ff;
+    border: 3px solid rgb(0, 255, 0);
+    width: 75%;
+    max-width: 328px;
+    padding-inline: 30px;
+    height: 560px;
+    border-radius: 24px;
+}
+
+.planosEnem section h2, .planoRedacao section h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    font-size: 2rem;
+}
+.planosEnem section p, .planoRedacao section p:nth-child(3){
+    color: rgb(228, 228, 228);
+    margin-top: -10px;
+    font-size: .8rem;
+}
+.preco{
+    font-size: 3.2rem;
+    color: rgb(0, 255, 0);
+    font-weight: 600;
+}
+.planosEnem section li{
+    list-style: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.planosEnem section ul span{
+    color: rgb(0, 255, 0);
+}
+.planosEnem section button, .planoRedacao button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+    width:100%;
+    height: 50px;
+    font-size: 1.2rem;
+    padding-inline: 6px;
+    align-self: center;
+}
+
+.planoRedacao section{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(0, 255, 0);
+    padding: 20px;
+    margin-block: 30px;
+    background-color: #0077fe;
+}
+.planoRedacao p{
+    color: white;
+}
+.planoRedacao section p:nth-child(2){
+    font-size: 1.5rem;
+}
+.planoRedacao section p:nth-child(3){
+    margin-block: 32px;
+}
+
+@media (min-width: 621px){
+    .planoRedacao section{
+        border-radius: 24px;
+    }
+    #iconeCarrinho{
+        position:static;
+        border: none;
+        border-radius: 0;
+        width: 24px;
+    }
+}
+@media (min-width: 1000px){
+    .planosEnem{
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+    .plano1, .plano2, .plano3{
+        height: 560px;
+    }
+    .planosEnem section button{
+        width: 100%;
+        transition: .5s;
+    }
+    .planoRedacao section button{
+        width: 90%;
+        transition: .5s
+    }
+    .planosEnem section button:hover, .planoRedacao section button:hover{
+        transform: translate(5px, -5px);
+        cursor:pointer
+    }
+    .planoRedacao section{
+        border-radius: 24px;
+    }
+    
+}

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', 'Calibri';
+    
+}
+::-webkit-scrollbar-track {
+    background-color: #0077fe;
+    border-radius: 20px
+}
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 20px
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0,255,0);
+}
+.activeLink{
+    border-bottom: 1.5px solid rgb(0,255,0);
+}
+body{
+    background-image: url(../img/fundo2.png);
+}
+
+/* INICIO CONFIGURAÇÃO DO HEADER E FOOTER */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 120px;
+    width:100%;
+    background-color: #0077fe;
+    border-bottom: 3px solid rgb(0,255,0);
+    color: white;
+}
+header img{
+    width: 128px;
+    display: none;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    transition: .3s
+}
+nav{
+    width: 100%;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 19px;
+    list-style: none;
+    text-transform: uppercase;
+}
+header li{
+    font-size: .8rem;
+}
+header a:hover{
+    color: rgb(0,255,0);
+}
+
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 20px;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0077fe;
+    border-top: 3px solid rgb(0,255,0);
+}
+footer ul{
+    list-style: none;
+    line-height: 2.5;
+    color: white;
+}
+footer>img{
+    display: none;
+}
+footer ul li{
+    transition: .1s;
+    text-transform: uppercase;
+}
+footer ul li:hover{
+    color: rgb(0,255,0);
+    cursor:pointer
+}
+.redes-icones img{
+    width: 34px;
+}
+.redes-icones img:hover{
+    border: 2px solid rgb(0,255,0);
+    border-radius: 50%;
+    cursor: pointer
+}
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    gap: 30px;
+}
+/* FIM CONFIGURAÇÃO DO HEADER E FOOTER */
+
+main{
+    height: 90vh;
+}
+.mainIndex{
+    background-image: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.textoInicio{
+    display: none;
+}
+.botao{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0077fe;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(0,255,0);
+    transition: 1s;
+}
+
+.anima span{
+    text-transform: uppercase;
+    color: rgb(0,255,0);
+
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.cardText img{
+    width: 200px;
+    margin-top: -180px;
+}
+.cardText h1{
+    padding-inline: 10px;
+    font-size: 1.6rem;
+}
+
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever {
+    100%{
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 600px){
+    header li{
+        font-size: 1rem
+    }
+    .cardText h1{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 917px){
+    header{
+        justify-content: space-between;
+        padding-inline: 160px;
+        flex-direction: row;
+
+    }
+    header li{ 
+        font-size: 1.1rem;
+    }
+    header nav{
+        width: 50%
+    }
+    header img{
+        display: block;
+    }
+    .cardText img{
+        display: none;
+    }
+    .cardText h1{
+        font-size: 1.6rem
+    }
+    .botao:hover{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer
+    }
+    .mainIndex{
+        background-image: url(../img/foguete-unscreen.gif);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .textoInicio{
+        display: block;
+    }
+    footer{
+        flex-direction: row;
+    }
+    footer>img{
+        display: block;
+    }
+    .anima {
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+        border-right: 2px solid #000000;
+        padding-right: 3px ;
+        max-width: 0; 
+        white-space: nowrap;
+        overflow: hidden;
+        animation: pisca normal infinite .8s, escrever normal 5s steps(55) both;
+    }
+    .anima{
+        font-size: 3rem;
+    }   
+}
+@media (min-width: 1250px){
+    .cardText h1{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1480px ){
+    .cardText h1{
+        font-size: 2.5rem
+    }
+}
+
+
+
+
